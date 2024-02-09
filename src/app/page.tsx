@@ -5,7 +5,7 @@ import Why from '@/components/why/Why'
 import Technologies from '@/components/technologies/Technologies'
 import Work from '@/components/work/Work'
 import NumOf from '@/components/numOf/NumOf'
-import Team from '@/components/team/Team'
+// import Team from '@/components/team/Team'
 
 
 
@@ -18,7 +18,7 @@ export default function Home() {
       <Services/>
       <Technologies/>
       <Work/>
-      <Team/>
+{/*       <Team/> */}
       <NumOf/>
     </>
   )
