@@ -1,0 +1,40 @@
+{
+  "name": "tringledo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@formkit/auto-animate": "^0.8.1",
+    "@types/react-slick": "^0.23.13",
+    "framer-motion": "^10.18.0",
+    "next": "14.0.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-fast-marquee": "^1.6.2",
+    "react-icons": "^4.12.0",
+    "react-scroll": "^1.9.0",
+    "react-slick": "^0.29.0",
+    "react-type-animation": "^3.2.0",
+    "sharp": "^0.33.1",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^11.0.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/react-scroll": "^1.8.10",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.4",
+    "postcss": "^8",
+    "prettier": "3.2.4",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5"
+  }
+}

@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.grd {
+  @apply bg-gradient-to-b from-white via-gray-300 to-gray-800 inline-block text-transparent bg-clip-text
+}
+.slick-slide>div {
+    margin: 0 30px;
+}
+
+.slick-slide>div:nth-child(1){
+    margin-left: 0;
+}
+
+.slick-list {
+    margin-right: -30px;
+}
+
+#mySwiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+  
+  #swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 290px;
+    height: 350px;
+    border-radius: 5%;
+    
+    
+  }
+  
+#swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    
+  }
+
+  .ringtri {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+  }
+
+  .ringtri i {
+    position: absolute;
+    inset: 0;
+    border: 2px solid #ECFFAE;
+    transition: 0.5s;
+
+  }
+
+  .ringtri i:nth-child(1){
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    animation: animate 6s linear infinite;
+  }
+
+  .ringtri i:nth-child(2){
+    border-radius: 41% 44% 56% 59% / 38% 62% 63% 37%;
+    animation: animate 4s linear infinite;
+  }
+
+  .ringtri i:nth-child(3){
+    border-radius: 41% 44% 56% 59% / 38% 62% 63% 37%;
+    animation: animate2 10s linear infinite;
+  }
+
+.ringtri:hover i {
+    /* border: 6px solid #A7D707; */
+    filter: drop-shadow(0 0 5px #A7D707);
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+@media only screen and (min-width: 992px) {
+  .ringtri {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+/* styles for tablet devices */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .ringtri {
+    width: 400px;
+    height: 400px;
+  }
+  #CardDiv{
+    display: none;
+  }
+}
+
+/* styles for mobile devices */
+@media only screen and (max-width: 767px) {
+  .ringtri {
+    width: 200px;
+    height: 200px;
+  }
+  #CardDiv{
+    display: none;
+  }
+
+}
